@@ -1,186 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Partner Contact Roles — Odoo Module by Techbot ERP</title>
-  <style>
-    /* Basic, sanitizer-friendly CSS */
-    body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
-    a{color:#c9c9c9;text-decoration:none}
-    a:hover{color:#fff}
-    .topbar{background:#111;border-bottom:1px solid #2a2a2a}
-    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-    .row{display:flex;align-items:center;justify-content:space-between}
-    .title{font-weight:800;font-size:16px;color:#fff;display:inline-flex;gap:8px;align-items:center}
-    .pill{display:inline-block;background-color:rgba(229,9,20,.18);color:#ffd7da;font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;border:1px solid rgba(229,9,20,.35)}
-    .nav a{font-size:14px;font-weight:700;color:#c9c9c9;margin-left:20px}
-    .hero{background:#111;padding:64px 0}
-    .hero h1{color:#e50914;font-size:52px;font-weight:800;line-height:1.1;margin:0 0 16px}
-    .hero p{color:#c9c9c9;font-size:18px;margin:0}
-    .section{padding:56px 0}
-    .section h2{color:#e50914;font-size:36px;margin:0 0 24px}
-    .cards{display:flex;flex-wrap:wrap;gap:24px}
-    .card{background:#111;border:1px solid #2a2a2a;border-radius:18px;padding:24px;flex:1 1 240px;min-height:160px}
-    .card h3{margin:0 0 8px;font-size:18px;color:#fff}
-    .card p{margin:0;color:#c9c9c9;font-size:14px}
-    .screens{display:flex;flex-wrap:wrap;gap:24px}
-    .shot{background:#000;border:1px solid #2a2a2a;border-radius:18px;padding:18px;flex:1 1 320px}
-    .shot h3{margin:0 0 12px;color:#fff}
-    .shot img{width:100%;border-radius:12px;border:1px solid #2a2a2a}
-    .listcard ol,.listcard ul{margin:0 0 0 18px;color:#c9c9c9}
-    .listcard li{margin:6px 0}
-    .cta{text-align:center}
-    .btn{display:inline-block;background:#e50914;color:#fff;padding:14px 24px;border-radius:10px;font-weight:700}
-    .muted{color:#c9c9c9}
-    /* Tiny swap icon for header if you want it */
-    .swap{display:inline-block;vertical-align:-2px}
-    .toc{margin:12px -8px 0}
-    .toc a{margin:0 8px;font-weight:700;font-size:14px;color:#c9c9c9}
-    .toc a:hover{color:#fff}
-    /* Mobile tweaks */
-    @media (max-width:720px){
-      .hero h1{font-size:36px}
-      .row{flex-direction:column;align-items:flex-start;gap:12px}
-      .nav{width:100%;display:flex;flex-wrap:wrap;gap:12px}
-      .nav a{margin-left:0}
-    }
-  </style>
-</head>
-<body>
+<div style="font-family: Inter, sans-serif; background-color:#000000; color:#FFFFFF; margin:-15px;">
+  <table style="width:100%; border-collapse:collapse;">
+    <tbody>
 
-  <!-- Top Bar -->
-  <div class="topbar">
-    <div class="wrap">
-      <div class="row" style="padding:14px 0">
-        <div class="title">
-          <span>Odoo
-            <svg class="swap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                 width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-                 stroke-linecap="round" stroke-linejoin="round" style="margin:0 2px;">
-              <path d="M3 7h14M13 3l4 4-4 4M21 17H7M11 21l-4-4 4-4"/>
-            </svg>
-            Partner Contact Roles
-          </span>
-          <span class="pill">Odoo Gold Partner</span>
-        </div>
-        <div class="nav">
-          <a href="#features">Features</a>
-          <a href="#screenshots">Screenshots</a>
-          <a href="#installation">Installation</a>
-          <a href="#usage">Usage</a>
-          <a href="#technical">Technical</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- Top bar -->
+      <tr>
+        <td style="padding:14px 40px; background-color:#111111; border-bottom:1px solid #2a2a2a;">
+          <table style="width:100%;">
+            <tr>
+              <td style="text-align:left; width:50%;">
+                <span style="font-weight:800; font-size:16px; color:#FFFFFF;">Partner Contact Roles</span>
+                <span style="display:inline-block; background-color:rgba(229,9,20,.18); color:#ffd7da; font-size:12px; font-weight:600; padding:6px 10px; border-radius:999px; border:1px solid rgba(229,9,20,.35); margin-left:12px; vertical-align:middle;">Odoo Gold Partner</span>
+              </td>
+              <td style="text-align:right; width:50%;">
+                <a href="#features" style="font-size:14px; font-weight:700; color:#c9c9c9; margin-left:20px; text-decoration:none;">Features</a>
+                <a href="#screens" style="font-size:14px; font-weight:700; color:#c9c9c9; margin-left:20px; text-decoration:none;">Screenshots</a>
+                <a href="#install" style="font-size:14px; font-weight:700; color:#c9c9c9; margin-left:20px; text-decoration:none;">Installation</a>
+                <a href="#usage" style="font-size:14px; font-weight:700; color:#c9c9c9; margin-left:20px; text-decoration:none;">Usage</a>
+                <a href="#tech" style="font-size:14px; font-weight:700; color:#c9c9c9; margin-left:20px; text-decoration:none;">Technical</a>
+                <a href="https://techboterp.com/" style="display:inline-block; background-color:#e50914; color:#fff; padding:8px 16px; border-radius:10px; text-decoration:none; font-weight:700; margin-left:20px;">Contact Techbot</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-  <!-- Hero -->
-  <div class="hero">
-    <div class="wrap">
-      <h1>Partner Contact Roles<br> Powered by Techbot ERP</h1>
-      <p class="muted">Simple checkboxes for customer and vendor roles. Clean sync with Odoo ranks.</p>
-    </div>
-  </div>
+      <!-- Hero -->
+      <tr>
+        <td style="padding:80px 40px; background-color:#111111;">
+          <table style="width:100%;">
+            <tr>
+              <td style="width:55%; vertical-align:middle; padding-right:30px;">
+                <h1 style="color:#e50914; font-size:52px; font-weight:800; line-height:1.1; margin:0 0 20px 0;">
+                  Partner Contact Roles <br> Powered By Techbot ERP
+                </h1>
+                <p style="color:#c9c9c9; font-size:18px; margin:0 0 24px 0;">
+                  Simple Customer and Vendor checkboxes on contacts, auto-synced with Odoo ranks.
+                </p>
+              </td>
+              <td style="width:45%; vertical-align:middle;">
+                <div style="background-color:#000000; border:1px solid #2a2a2a; border-radius:18px; padding:10px;">
+                  <img src="screenshot_1.png" alt="Contact form with role checkboxes" style="width:100%; border-radius:14px;">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-  <!-- Features -->
-  <div id="features" class="section">
-    <div class="wrap">
-      <h2>Key features</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>User-Friendly Checkboxes</h3>
-          <p>Adds clear “Is a Customer” and “Is a Vendor” fields on contacts.</p>
-        </div>
-        <div class="card">
-          <h3>Automatic Sync</h3>
-          <p>Keeps <code>customer_rank</code> and <code>supplier_rank</code> in lockstep.</p>
-        </div>
-        <div class="card">
-          <h3>Works With Core Apps</h3>
-          <p>Fully compatible with Sales, Purchase, and Accounting.</p>
-        </div>
-        <div class="card">
-          <h3>Clean, Modern UX</h3>
-          <p>Small change, big clarity. Fits right into Odoo 18.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- Key features -->
+      <tr id="features">
+        <td style="padding:70px 40px;">
+          <h2 style="color:#e50914; font-size:36px; text-align:left; margin:0 0 30px 0;">Key features</h2>
+          <table style="width:100%; border-collapse:collapse;">
+            <tr>
+              <td style="padding:15px; width:25%; vertical-align:top;">
+                <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px; height:160px;">
+                  <h3 style="color:#FFFFFF; margin:0 0 10px 0;">User-friendly</h3>
+                  <p style="color:#c9c9c9; font-size:14px; margin:0;">Two clear checkboxes: Is a Customer, Is a Vendor.</p>
+                </div>
+              </td>
+              <td style="padding:15px; width:25%; vertical-align:top;">
+                <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px; height:160px;">
+                  <h3 style="color:#FFFFFF; margin:0 0 10px 0;">Auto sync</h3>
+                  <p style="color:#c9c9c9; font-size:14px; margin:0;">Keeps <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">customer_rank</code> and <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">supplier_rank</code> aligned.</p>
+                </div>
+              </td>
+              <td style="padding:15px; width:25%; vertical-align:top;">
+                <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px; height:160px;">
+                  <h3 style="color:#FFFFFF; margin:0 0 10px 0;">Works with core</h3>
+                  <p style="color:#c9c9c9; font-size:14px; margin:0;">Compatible with Sales, Purchase, and Accounting.</p>
+                </div>
+              </td>
+              <td style="padding:15px; width:25%; vertical-align:top;">
+                <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px; height:160px;">
+                  <h3 style="color:#FFFFFF; margin:0 0 10px 0;">Clean UX</h3>
+                  <p style="color:#c9c9c9; font-size:14px; margin:0;">Fits Odoo 18 visuals and patterns.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-  <!-- Screenshots -->
-  <div id="screenshots" class="section" style="background:#111">
-    <div class="wrap">
-      <h2>Screenshots</h2>
-      <div class="screens">
-        <div class="shot">
-          <h3>Contact form with role checkboxes</h3>
-          <img src="screenshot_1.png" alt="Contact form with role checkboxes">
-        </div>
-        <div class="shot">
-          <h3>Ranks stay in sync</h3>
-          <img src="screenshot_2.png" alt="Checkboxes reflecting ranks">
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- Screenshots -->
+      <tr id="screens">
+        <td style="padding:70px 40px; background-color:#111111;">
+          <h2 style="color:#e50914; font-size:36px; text-align:left; margin:0 0 30px 0;">Screenshots</h2>
+          <table style="width:100%; border-collapse:collapse;">
+            <tr>
+              <td style="padding:15px; width:50%; vertical-align:top;">
+                <div style="background-color:#000000; border:1px solid #2a2a2a; border-radius:18px; padding:25px;">
+                  <h3 style="margin:0 0 12px 0; color:#FFFFFF;">Contact form</h3>
+                  <img src="screenshot_1.png" alt="Role checkboxes on contact" style="width:100%; border-radius:12px; border:1px solid #2a2a2a;">
+                </div>
+              </td>
+              <td style="padding:15px; width:50%; vertical-align:top;">
+                <div style="background-color:#000000; border:1px solid #2a2a2a; border-radius:18px; padding:25px;">
+                  <h3 style="margin:0 0 12px 0; color:#FFFFFF;">Ranks stay in sync</h3>
+                  <img src="screenshot_2.png" alt="Ranks syncing with checkboxes" style="width:100%; border-radius:12px; border:1px solid #2a2a2a;">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-  <!-- Installation -->
-  <div id="installation" class="section">
-    <div class="wrap">
-      <h2>Installation</h2>
-      <div class="card listcard">
-        <ol>
-          <li>Place <code>partner_contact_roles</code> in your addons path.</li>
-          <li>Restart Odoo.</li>
-          <li>Enable Developer Mode.</li>
-          <li>Apps → Update Apps List.</li>
-          <li>Install “Partner Contact Roles”.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
+      <!-- Installation -->
+      <tr id="install">
+        <td style="padding:70px 40px;">
+          <h2 style="color:#e50914; font-size:36px; text-align:left; margin:0 0 30px 0;">Installation</h2>
+          <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px;">
+            <ol style="margin:0 0 0 20px; color:#c9c9c9; font-size:16px;">
+              <li>Place <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">partner_contact_roles</code> in your addons path.</li>
+              <li>Restart Odoo.</li>
+              <li>Enable Developer Mode.</li>
+              <li>Apps → Update Apps List.</li>
+              <li>Install “Partner Contact Roles”.</li>
+            </ol>
+          </div>
+        </td>
+      </tr>
 
-  <!-- Usage -->
-  <div id="usage" class="section" style="background:#111">
-    <div class="wrap">
-      <h2>Usage</h2>
-      <div class="card">
-        <p class="muted">
-          Open Contacts, create or edit a contact, then tick “Is a Customer” or “Is a Vendor”.
-          The module updates ranks automatically; unchecking resets them.
-        </p>
-      </div>
-    </div>
-  </div>
+      <!-- Usage -->
+      <tr id="usage">
+        <td style="padding:70px 40px; background-color:#111111;">
+          <h2 style="color:#e50914; font-size:36px; text-align:left; margin:0 0 30px 0;">Usage</h2>
+          <div style="background-color:#000000; border:1px solid #2a2a2a; border-radius:18px; padding:25px;">
+            <p style="color:#c9c9c9; font-size:16px; margin:0;">
+              Open Contacts, create or edit a contact, then tick “Is a Customer” or “Is a Vendor”.
+              The module updates <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">customer_rank</code> and
+              <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">supplier_rank</code> automatically.
+            </p>
+          </div>
+        </td>
+      </tr>
 
-  <!-- Technical -->
-  <div id="technical" class="section">
-    <div class="wrap">
-      <h2>Technical details</h2>
-      <div class="card listcard">
-        <ul>
-          <li><strong>Model:</strong> extends <code>res.partner</code></li>
-          <li><strong>Fields:</strong> <code>is_customer</code> (Boolean), <code>is_vendor</code> (Boolean)</li>
-          <li><strong>Logic:</strong> compute + inverse methods keep ranks consistent</li>
-          <li><strong>Depends on:</strong> <code>base</code>, <code>sale_management</code>, <code>purchase</code></li>
-          <li><strong>Version:</strong> Odoo 18.0 • License AGPL-3</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+      <!-- Technical -->
+      <tr id="tech">
+        <td style="padding:70px 40px;">
+          <h2 style="color:#e50914; font-size:36px; text-align:left; margin:0 0 30px 0;">Technical details</h2>
+          <div style="background-color:#111111; border:1px solid #2a2a2a; border-radius:18px; padding:25px;">
+            <ul style="margin:0 0 0 20px; color:#c9c9c9; font-size:16px;">
+              <li><strong>Model:</strong> extends <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">res.partner</code></li>
+              <li><strong>Fields:</strong> <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">is_customer</code>, <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">is_vendor</code></li>
+              <li><strong>Logic:</strong> compute + inverse methods keep ranks consistent</li>
+              <li><strong>Depends on:</strong> <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">base</code>, <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">sale_management</code>, <code style="background:#222; padding:2px 6px; border-radius:4px; color:#f1c40f;">purchase</code></li>
+              <li><strong>Version:</strong> Odoo 18.0 • License AGPL-3</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
 
-  <!-- Contact -->
-  <div id="contact" class="section" style="background:#111">
-    <div class="wrap cta">
-      <h2>Need help or customizations?</h2>
-      <p class="muted" style="max-width:680px;margin:0 auto 18px">
-        We can tailor the module to your workflows and roll it out across your stack.
-      </p>
-      <a class="btn" href="https://techboterp.com" target="_blank" rel="noopener">Contact Techbot</a>
-    </div>
-  </div>
+      <!-- CTA -->
+      <tr>
+        <td style="padding:80px 40px; text-align:center; background-color:#111111;">
+          <h2 style="color:#e50914; font-size:36px; margin:0 0 20px 0;">Need help or customizations?</h2>
+          <p style="color:#c9c9c9; font-size:18px; margin:auto; max-width:600px;">
+            We can tailor the module to your workflows and roll it out across your stack.
+          </p>
+          <a href="https://techboterp.com/" style="display:inline-block; background-color:#e50914; color:#fff; padding:15px 30px; border-radius:10px; text-decoration:none; font-weight:700; margin-top:30px;">Contact Techbot</a>
+        </td>
+      </tr>
 
-</body>
-</html>
+    </tbody>
+  </table>
+</div>
