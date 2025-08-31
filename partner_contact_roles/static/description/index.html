@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Contact Roles - Odoo Module</title>
+    <style>
+        :root {
+            --primary-red: #E60000;
+            --background-dark: #121212;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --border-color: #333333;
+            --card-background: #1e1e1e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 .highlight, h2 .highlight {
+            color: var(--primary-red);
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .badge-odoo { background-color: #a72a69; }
+        .badge-license { background-color: #007bff; }
+        .badge-category { background-color: #343a40; }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--primary-red);
+        }
+        
+        .screenshot-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .screenshot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 2px solid var(--border-color);
+            margin-bottom: 15px;
+        }
+
+        code {
+            background-color: #2c2c2c;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            color: #f1c40f;
+        }
+        
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            background-color: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .contact-button:hover {
+            background-color: #c40000;
+            transform: translateY(-2px);
+        }
+        
+        .contact-button svg {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><span class="highlight">Partner Contact Roles</span> 👥</h1>
+        
+        <div class="badges">
+            <span class="badge badge-odoo">Odoo 18.0</span>
+            <span class="badge badge-license">AGPL-3</span>
+            <span class="badge badge-category">Sales/CRM</span>
+        </div>
+
+        <nav class="toc">
+            <h2><span class="highlight">Table of Contents</span> 📖</h2>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#technical">Technical Details</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section id="overview">
+            <h2><span class="highlight">Overview</span> ✨</h2>
+            <p>
+                The <strong>Partner Contact Roles</strong> module for Odoo 18 simplifies the classification of your contacts by introducing intuitive "Is a Customer" and "Is a Vendor" checkboxes directly on the contact form. This module bridges the gap between Odoo's abstract ranking system (<code>customer_rank</code> and <code>supplier_rank</code>) and the need for a clear, user-friendly interface.
+            </p>
+        </section>
+        
+        <section id="features">
+            <h2><span class="highlight">Features</span> 🚀</h2>
+            <ul>
+                <li><strong>User-Friendly Checkboxes:</strong> Adds clear "Is a Customer" and "Is a Vendor" checkboxes.</li>
+                <li><strong>Automatic Synchronization:</strong> Seamlessly syncs checkbox states with Odoo's standard <code>customer_rank</code> and <code>supplier_rank</code> fields.</li>
+                <li><strong>Seamless Integration:</strong> Fully compatible with Odoo's native Sales, Purchase, and Accounting modules.</li>
+                <li><strong>Modern Design:</strong> Clean interface that maintains Odoo's design principles.</li>
+            </ul>
+        </section>
+        
+        <section id="screenshots">
+            <h2><span class="highlight">Screenshots</span> 📸</h2>
+            <div class="screenshot-container">
+                <p><strong>Contact Form with New Role Checkboxes:</strong></p>
+                <img src="placeholder_screenshot_1.png" alt="Odoo contact form with new checkboxes">
+            </div>
+            <div class="screenshot-container">
+                <p><strong>Status Automatically Updated Based on Ranks:</strong></p>
+                <img src="placeholder_screenshot_2.png" alt="Checkboxes reflecting existing sales and purchase orders">
+            </div>
+        </section>
+
+        <section id="installation">
+            <h2><span class="highlight">Installation</span> 🔧</h2>
+            <ol>
+                <li>Place the <code>partner_contact_roles</code> module folder into your Odoo custom addons path.</li>
+                <li>Restart your Odoo server.</li>
+                <li>Activate Developer Mode (Go to <strong>Settings > General Settings</strong>).</li>
+                <li>Go to <strong>Apps</strong> and click on "Update Apps List".</li>
+                <li>Search for "Partner Contact Roles" in the Apps list and click "Install".</li>
+            </ol>
+        </section>
+
+        <section id="usage">
+            <h2><span class="highlight">Usage</span> 🧑‍💻</h2>
+            <p>
+                Once installed, navigate to the <strong>Contacts</strong> application. When you create or edit any contact, you will find the new checkboxes ready to use. Checking or unchecking them will automatically update the contact's rank in Odoo.
+            </p>
+        </section>
+        
+        <section id="technical">
+            <h2><span class="highlight">Technical Details</span> 💻</h2>
+            <ul>
+                <li><strong>Model Inheritance:</strong> Extends <code>res.partner</code>.</li>
+                <li><strong>New Fields:</strong> <code>is_customer</code> (Boolean), <code>is_vendor</code> (Boolean).</li>
+                <li><strong>Logic:</strong> Uses <code>compute</code> and <code>inverse</code> methods for robust data synchronization.</li>
+                <li><strong>Dependencies:</strong> <code>base</code>, <code>sale_management</code>, <code>purchase</code>.</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2><span class="highlight">Contact & Support</span> 📞</h2>
+            <p>For bugs, support, or custom development inquiries, please contact us.</p>
+            <a href="https://techboterp.com" target="_blank" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Contact Techbot ERP
+            </a>
+        </section>
+
+    </div>
+
+</body>
+</html>
